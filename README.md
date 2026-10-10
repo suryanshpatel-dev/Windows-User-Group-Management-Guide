@@ -29,8 +29,3 @@ This repository/guide provides a complete walkthrough for managing system accoun
 * **Reset Passwords:** Administrative override for changing account passwords without knowing the original credentials.
 * **Manage Permissions (Groups):** Assign users to standard local security groups (`Administrators`, `Remote Desktop Users`, `Users`).
 * **Disable/Delete Accounts:** Safely lock down profiles or remove user privileges.
-
-
-
-# Disable a user account
-Disable-LocalUser -Name "TechAdmin"
