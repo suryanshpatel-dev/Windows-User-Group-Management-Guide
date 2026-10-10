@@ -30,20 +30,7 @@ This repository/guide provides a complete walkthrough for managing system accoun
 * **Manage Permissions (Groups):** Assign users to standard local security groups (`Administrators`, `Remote Desktop Users`, `Users`).
 * **Disable/Delete Accounts:** Safely lock down profiles or remove user privileges.
 
-### 2. PowerShell Automation Cheat Sheet
 
-#### Local Account Management (`Microsoft.PowerShell.LocalAccounts`)
-```powershell
-# Create a new local user
-$Password = Read-Host -AsSecureString
-New-LocalUser -Name "TechAdmin" -Password $Password -FullName "Support Account"
-
-# Reset user password
-$NewPassword = Read-Host -AsSecureString
-Set-LocalUser -Name "TechAdmin" -Password $NewPassword
-
-# Add user to local Administrators group
-Add-LocalGroupMember -Group "Administrators" -Member "TechAdmin"
 
 # Disable a user account
 Disable-LocalUser -Name "TechAdmin"
